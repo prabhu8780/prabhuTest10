@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 - So when i want to get data from competitor device after connecting, what service and characteristics i need to send to device. Because i have three UDIDs one for Characteristic, one for Service and Comp Service Data character.\
+\
+- 1) What is a IEEE ID? can\'92t find it in BLE core specifications : \
+\
+        do you have a link?\
+        Does it allow to identify the \'93couple\'94 or the individual beacon?\
+\'97>  IEEE ID is the unique identity of BLE device which will not change anytime. In IOS, we can get IEEE of device after connection only. \
+\'97> It will identify individual beacon not couple beacon.\
+\'97> As we will have unique beacon name, so we can go with name for identification\
+\
+2) This will not work to check the real entry or the real exit. It should check the RSSI between the Door 1 \'93beacon couple" or Door 2 \'93beacon couple" NOT between Door 1 and Door 2 beacons. \
+	\'97> Actually i need some more clarification on it :) because we can get RSSI of individual beacons but how  we will get couple beacons RSSI value ? For that i need some more clarification. Please explain :)\
+\
+        Do you need more explanation or is it clear?\
+        The question is :  do we have to Setup in the App, the mini and maxi RSSI values to be checked for each beacon? - Yes We can setup Min and Maximum value of RSSI in the app. If we check and RSSI limit exceed then we will consider Exit or Our.\
+        What about the TX level setup for each beacon?\
+\
+3) Did\'92t understand your answer. Do you mean the App will be able to write and change values in the beacon (independently from its firmware)? - No, i don\'92t mean that app will write and change value in beacon. I mean beacon will send unique code to BLE device and get battery value from BLE device to iOS device.\
+\
+\
+Please clarify.}
